@@ -11,6 +11,22 @@
 |
 */
 
-Route::get('/', function () { return view('index'); });
+Route::get('/', 'PagesController@index')->name('index');
+
+Route::get('/personaje/{nombre?}', 'PagesController@personaje')->name('route.personajes');
+
+Route::get('/casas/{nombre?}', 'PagesController@casa')->name('route.casas');
+
+Route::get('/bestiario', 'PagesController@bestiario')->name('route.bestiario');
+
+Route::get('/hechizos', 'PagesController@hechizos')->name('route.hechizos');
+
+Route::get('/autor', 'PagesController@autor')->name('route.autor');
+
+
+
+
+
+
 
 

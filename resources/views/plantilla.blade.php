@@ -30,9 +30,9 @@
                             Personajes
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Magos</a></li>
-                            <li><a class="dropdown-item" href="#">Mortífagos</a></li>
-                            <li><a class="dropdown-item" href="#">Muggles</a></li>
+                            <li><a class="dropdown-item" href="{{ route('route.personajes', 'magos' )}}">Magos</a></li>
+                            <li><a class="dropdown-item" href="{{ route('route.personajes', 'mortifago')}}">Mortífagos</a></li>
+                            <li><a class="dropdown-item" href="{{ route('route.personajes', 'muggle' )}}">Muggles</a></li>
                         </ul>
                     </li>
 
@@ -58,7 +58,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">J.K Rowling</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('route.autor') }}">J.K Rowling</a>
                     </li>
 
                     <li class="nav-item">
