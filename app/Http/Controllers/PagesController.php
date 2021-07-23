@@ -11,38 +11,33 @@ class PagesController extends Controller
         return view('index');
     }
 
-    public function personaje($nombre){
+    public function personajes($nombre){
 
-        // $personaje = $nombre->input;
-        // echo "Este es el echo $personaje";
+        // echo "Este es el echo $nombre";
         return view("personajes/$nombre");
-
-        // return view("/personaje/",$nombre);
-
-        // $personajes = array(
-        //         0=> 'mago',
-        //         1=> 'muggle', 
-        //         2=>'mortifago'
-        //         );
-
-        // for($i=0; $i<count ($personajes); $i++)
-        // {
-        //     if ($personajes[$i] == $nombre)
-        //     {
-        //         $personaje = $personajes[i];
-        //         return view('personajes.$personaje')->with('$nombre');
-        //     }     
-        //  else{
-        //     echo $personajes[$i];
-        //     echo $nombre;
-        //     return view('autor');
-        //     }
-
-        //     }
     }
 
+    public function casas($nombre){
+
+        return view("casas/$nombre");
+        
+    }
 
     public function autor(){
         return view('autor');
     }
+
+    public function bestiario(){
+        return view('bestiario');
+    }
+
+    public function hechizos(){
+        return view('hechizos');
+    }
+
+    public function comunidad(){
+        return view('comunidad');
+    }
+
+
 }

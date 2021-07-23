@@ -13,15 +13,17 @@
 
 Route::get('/', 'PagesController@index')->name('index');
 
-Route::get('/personaje/{nombre?}', 'PagesController@personaje')->name('route.personajes');
+Route::get('/personaje/{nombre?}', 'PagesController@personajes')->name('route.personajes');
 
-Route::get('/casas/{nombre?}', 'PagesController@casa')->name('route.casas');
+Route::get('/casas/{nombre?}', 'PagesController@casas')->name('route.casas');
 
 Route::get('/bestiario', 'PagesController@bestiario')->name('route.bestiario');
 
 Route::get('/hechizos', 'PagesController@hechizos')->name('route.hechizos');
 
 Route::get('/autor', 'PagesController@autor')->name('route.autor');
+
+Route::get('/comunidad', 'PagesController@comunidad')->name('route.comunidad');
 
 
 
