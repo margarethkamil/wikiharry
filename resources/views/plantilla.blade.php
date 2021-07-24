@@ -113,7 +113,7 @@
 
 </head>
 
-<body style="background-color:grey;">
+<body style="background-color:black;" >
 
     <div class="container">
         @yield('seccion')
@@ -121,11 +121,11 @@
 
     <div>Footer</div>
 
-    <footer class="bg-dark text-center text-white">
+    <footer class=" w-auto p-3 bg-dark text-center text-white ">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <!-- Section: Social media -->
-            <section class="mb-4">
+            <section class="mb-4 ">
                 <!-- Facebook -->
                 <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/margarethkamil/"
                     role="button">
